@@ -1,7 +1,7 @@
 # One-command installer for Claude Code on Windows.
 $ErrorActionPreference = "Stop"
 
-$Repo = if ($env:BEAD_REPO) { $env:BEAD_REPO } else { "https://github.com/yhsun060421/--picture2pdf-skill.git" }
+$Repo = if ($env:BEAD_REPO) { $env:BEAD_REPO } else { "https://github.com/yhsun060421/Pindou--picture2pdf-skill.git" }
 $Dest = if ($args.Count -ge 1) { $args[0] } else { Join-Path $HOME ".claude\skills\bead-pattern" }
 
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) { throw "git is required" }

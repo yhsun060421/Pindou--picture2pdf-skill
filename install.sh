@@ -2,7 +2,7 @@
 # One-command installer for Claude Code / other agents.
 set -euo pipefail
 
-REPO="${BEAD_REPO:-https://github.com/yhsun060421/--picture2pdf-skill.git}"
+REPO="${BEAD_REPO:-https://github.com/yhsun060421/Pindou--picture2pdf-skill.git}"
 DEST="${1:-$HOME/.claude/skills/bead-pattern}"
 
 command -v git >/dev/null 2>&1 || { echo "git is required"; exit 1; }

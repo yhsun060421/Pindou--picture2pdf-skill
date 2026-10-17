@@ -10,14 +10,14 @@
 并自动交付一份在 iPhone / iPad / 安卓上打开就能点颜色高亮的交互式 PDF。
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![CI](https://github.com/yhsun060421/--picture2pdf-skill/actions/workflows/test.yml/badge.svg)](https://github.com/yhsun060421/--picture2pdf-skill/actions/workflows/test.yml)
+[![CI](https://github.com/yhsun060421/Pindou--picture2pdf-skill/actions/workflows/test.yml/badge.svg)](https://github.com/yhsun060421/Pindou--picture2pdf-skill/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/License-MIT-2ea44f)](LICENSE)
 [![Output](https://img.shields.io/badge/Output-Interactive%20PDF-1E7FC2)](#-outputs)
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-8A2BE2)](#install)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](#-contributing)
-[![Release](https://img.shields.io/github/v/release/yhsun060421/--picture2pdf-skill?color=1E7FC2)](https://github.com/yhsun060421/--picture2pdf-skill/releases)
+[![Release](https://img.shields.io/github/v/release/yhsun060421/Pindou--picture2pdf-skill?color=1E7FC2)](https://github.com/yhsun060421/Pindou--picture2pdf-skill/releases)
 
-[查看示例交互 PDF](assets/sample-interactive.pdf) · [效果图](assets/preview-overview.png) · [问题反馈](https://github.com/yhsun060421/--picture2pdf-skill/issues)
+[查看示例交互 PDF](assets/sample-interactive.pdf) · [效果图](assets/preview-overview.png) · [问题反馈](https://github.com/yhsun060421/Pindou--picture2pdf-skill/issues)
 
 </div>
 
@@ -45,7 +45,7 @@
 
 ## 📦 Releases
 
-[v1.0.0](https://github.com/yhsun060421/--picture2pdf-skill/releases) 提供示例交互 PDF 与完整 Skill 压缩包下载。
+[v1.0.0](https://github.com/yhsun060421/Pindou--picture2pdf-skill/releases) 提供示例交互 PDF 与完整 Skill 压缩包下载。
 
 ## 🧠 流程
 
@@ -70,7 +70,7 @@ flowchart LR
 ## 🚀 快速开始
 
 ```bash
-git clone https://github.com/yhsun060421/--picture2pdf-skill.git
+git clone https://github.com/yhsun060421/Pindou--picture2pdf-skill.git
 cd bead-pattern-skill
 pip install -r requirements.txt
 ```
@@ -109,18 +109,18 @@ python scripts/run_pipeline.py --input /path/to/photo.jpg --out outputs/girl --t
 **macOS / Linux**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yhsun060421/--picture2pdf-skill/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/yhsun060421/Pindou--picture2pdf-skill/main/install.sh | bash
 ```
 
 **Windows PowerShell**
 
 ```powershell
-irm https://raw.githubusercontent.com/yhsun060421/--picture2pdf-skill/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/yhsun060421/Pindou--picture2pdf-skill/main/install.ps1 | iex
 ```
 
 **直接让 AI 安装**
 
-> 请把 https://github.com/yhsun060421/--picture2pdf-skill 克隆到
+> 请把 https://github.com/yhsun060421/Pindou--picture2pdf-skill 克隆到
 > `~/.claude/skills/bead-pattern`，安装 `requirements.txt`，运行
 > `python scripts/doctor.py`，然后用 `examples/sample.png` 跑一遍 `--mode none` 验证。
 
@@ -134,7 +134,7 @@ Claude 会读取 [`SKILL.md`](SKILL.md)，按“取图 → 预处理 → 网格 
 手动安装：
 
 ```bash
-git clone https://github.com/yhsun060421/--picture2pdf-skill.git ~/.claude/skills/bead-pattern
+git clone https://github.com/yhsun060421/Pindou--picture2pdf-skill.git ~/.claude/skills/bead-pattern
 pip install -r ~/.claude/skills/bead-pattern/requirements.txt
 python ~/.claude/skills/bead-pattern/scripts/doctor.py
 ```
