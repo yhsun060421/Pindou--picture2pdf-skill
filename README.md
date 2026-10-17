@@ -12,7 +12,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-2ea44f)](LICENSE)
 [![Output](https://img.shields.io/badge/Output-Interactive%20PDF-1E7FC2)](#-outputs)
-[![Claude Skill](https://img.shields.io/badge/Claude-Skill-8A2BE2)](#-use-as-a-claude-skill)
+[![Claude Skill](https://img.shields.io/badge/Claude-Skill-8A2BE2)](#install)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](#-contributing)
 [![Release](https://img.shields.io/github/v/release/yhsun060421/--picture2pdf-skill?color=1E7FC2)](https://github.com/yhsun060421/--picture2pdf-skill/releases)
 
@@ -100,6 +100,8 @@ python scripts/run_pipeline.py --input /path/to/photo.jpg --out outputs/girl --t
 
 > 需要本机安装 **Chrome / Edge**（用于把矢量 SVG 打印成 PDF）。
 > 找不到时设置 `BEAD_CHROME=/path/to/chrome`。
+
+<a id="install"></a>
 
 ## ⚡ AI 一键安装（开箱即用）
 
