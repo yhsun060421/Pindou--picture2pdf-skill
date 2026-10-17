@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+outputs/
+test_out/
+test_input.png
+interactive-print.html
+interactive-print2.html
+interactive-raw.pdf
+interactive-raw2.pdf

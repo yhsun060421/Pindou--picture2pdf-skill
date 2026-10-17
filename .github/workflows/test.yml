@@ -1,0 +1,27 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run pipeline (no image API required)
+        run: |
+          python scripts/run_pipeline.py \
+            --input examples/sample.png \
+            --out /tmp/bead-test \
+            --title "CI test" \
+            --mode none \
+            --colors 7 \
+            --max-cells 25
+      - name: Validate
+        run: python scripts/validate.py --out /tmp/bead-test

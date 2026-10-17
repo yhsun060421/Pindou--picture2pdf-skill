@@ -1,0 +1,11 @@
+{
+  "cell_size": 40,
+  "grid_origin": [150, 210],
+  "legend_width": 560,
+  "legend_gap": 60,
+  "legend_row_step": 62,
+  "blue": "#1E7FC2",
+  "fade_ratio": 0.13,
+  "page_max_mm": 300,
+  "page_margin_mm": 6
+}
