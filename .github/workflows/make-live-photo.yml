@@ -1,0 +1,28 @@
+name: make-live-photo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  make:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: Create Apple Live Photo pair and .pvt
+        working-directory: tools/livephoto
+        run: |
+          set -eux
+          # -p / --pvt writes a .pvt package without touching the originals
+          uvx --python 3.12 makelive -p --manual cover.jpg clip.mov
+          # also write the metadata into the pair itself
+          uvx --python 3.12 makelive --manual cover.jpg clip.mov
+          ls -lah
+          ls -lah cover.pvt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bead-pattern-live-photo
+          path: tools/livephoto/
