@@ -15,7 +15,19 @@ else
   git clone --depth 1 "$REPO" "$DEST"
 fi
 
-python3 -m pip install --user -r "$DEST/requirements.txt"
+# Only install when a dependency is actually missing.
+if ! python3 -c "import PIL, numpy, fitz, requests" >/dev/null 2>&1; then
+  if ! python3 -m pip install --user -r "$DEST/requirements.txt"; then
+    echo
+    echo "Automatic dependency install failed."
+    echo "Create a venv and install manually:"
+    echo "  python3 -m venv \"$DEST/.venv\""
+    echo "  \"$DEST/.venv/bin/pip\" install -r \"$DEST/requirements.txt\""
+    echo "  source \"$DEST/.venv/bin/activate\""
+    exit 1
+  fi
+fi
+
 python3 "$DEST/scripts/doctor.py"
 
 echo

@@ -14,7 +14,12 @@ if (Test-Path (Join-Path $Dest ".git")) {
     git clone --depth 1 $Repo $Dest
 }
 
-python -m pip install --user -r (Join-Path $Dest "requirements.txt")
+# Only install when a dependency is actually missing.
+python -c "import PIL, numpy, fitz, requests" 2>$null
+if ($LASTEXITCODE -ne 0) {
+    python -m pip install --user -r (Join-Path $Dest "requirements.txt")
+}
+
 python (Join-Path $Dest "scripts\doctor.py")
 
 Write-Host ""
