@@ -10,6 +10,7 @@
 并自动交付一份在 iPhone / iPad / 安卓上打开就能点颜色高亮的交互式 PDF。
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![CI](https://github.com/yhsun060421/--picture2pdf-skill/actions/workflows/test.yml/badge.svg)](https://github.com/yhsun060421/--picture2pdf-skill/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/License-MIT-2ea44f)](LICENSE)
 [![Output](https://img.shields.io/badge/Output-Interactive%20PDF-1E7FC2)](#-outputs)
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-8A2BE2)](#install)
